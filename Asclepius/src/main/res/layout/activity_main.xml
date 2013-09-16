@@ -20,6 +20,6 @@
         android:id="@+id/button"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:onClick="onClick_ButtonMainNext" />
+        android:onClick="onButtonClick_MainNext" />
 
 </RelativeLayout>

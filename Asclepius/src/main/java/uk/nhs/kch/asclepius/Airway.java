@@ -3,6 +3,8 @@ package uk.nhs.kch.asclepius;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.view.View;
+import android.widget.CheckBox;
 
 public class Airway extends Activity {
 
@@ -19,5 +21,4 @@ public class Airway extends Activity {
         getMenuInflater().inflate(R.menu.airway, menu);
         return true;
     }
-    
 }

@@ -22,7 +22,7 @@ public class Main extends Activity {
         return true;
     }
 
-    public void onClick_ButtonMainNext(View view){
+    public void onButtonClick_MainNext(View view){
         Intent intent = new Intent(this, CriticalDates.class);
         startActivity(intent);
     }

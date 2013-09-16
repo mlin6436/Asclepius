@@ -72,7 +72,7 @@ public class CriticalDates extends Activity {
         return true;
     }
 
-    public void onClick_ButtonCriticalDatesNext(View view){
+    public void onButtonClick_CriticalDatesNext(View view){
         Intent intent = new Intent(this, Airway.class);
         startActivity(intent);
     }
