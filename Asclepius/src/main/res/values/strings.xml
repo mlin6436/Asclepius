@@ -7,5 +7,6 @@
     <string name="title_activity_critical_dates">Critical Dates</string>
     <string name="criticaldates_dateofincident">Date of Incident</string>
     <string name="title_activity_airway">Airway</string>
+    <string name="title_activity_spine">Spine</string>
 
 </resources>

@@ -30,6 +30,10 @@
             android:name="uk.nhs.kch.asclepius.Airway"
             android:label="@string/title_activity_airway" >
         </activity>
+        <activity
+            android:name="uk.nhs.kch.asclepius.Spine"
+            android:label="@string/title_activity_spine" >
+        </activity>
     </application>
 
 </manifest>
