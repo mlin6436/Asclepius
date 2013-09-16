@@ -34,6 +34,10 @@
             android:name="uk.nhs.kch.asclepius.Spine"
             android:label="@string/title_activity_spine" >
         </activity>
+        <activity
+            android:name="uk.nhs.kch.asclepius.Breathing"
+            android:label="@string/title_activity_breathing" >
+        </activity>
     </application>
 
 </manifest>

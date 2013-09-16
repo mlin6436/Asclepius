@@ -1,5 +1,6 @@
 package uk.nhs.kch.asclepius;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -27,5 +28,9 @@ public class Spine extends Activity {
         getMenuInflater().inflate(R.menu.spine, menu);
         return true;
     }
-    
+
+    public void onButtonClick_SpineNext(View view){
+        Intent intent = new Intent(this, Breathing.class);
+        startActivity(intent);
+    }
 }

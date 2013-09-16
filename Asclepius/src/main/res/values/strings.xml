@@ -8,5 +8,17 @@
     <string name="criticaldates_dateofincident">Date of Incident</string>
     <string name="title_activity_airway">Airway</string>
     <string name="title_activity_spine">Spine</string>
+    <string name="title_activity_breathing">Breathing</string>
+
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
 
 </resources>
