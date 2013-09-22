@@ -35,7 +35,7 @@ public class Airway extends Activity {
 
     }
 
-    public void onButtonClick_AirwayNext(View view){
+    public void onButtonClick_Next(View view){
         Intent intent = new Intent(this, Spine.class);
         startActivity(intent);
     }

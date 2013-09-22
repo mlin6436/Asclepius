@@ -29,7 +29,7 @@ public class Spine extends Activity {
         return true;
     }
 
-    public void onButtonClick_SpineNext(View view){
+    public void onButtonClick_Next(View view){
         Intent intent = new Intent(this, Breathing.class);
         startActivity(intent);
     }

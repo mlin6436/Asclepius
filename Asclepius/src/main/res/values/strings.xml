@@ -4,10 +4,31 @@
     <string name="app_name">Asclepius</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="button_Next">Next</string>
+    <string name="text_Yes">Yes</string>
+    <string name="text_No">No</string>
     <string name="title_activity_critical_dates">Critical Dates</string>
-    <string name="criticaldates_dateofincident">Date of Incident</string>
+    <string name="text_DateOfIncident">Date of Incident</string>
+    <string name="text_ArrivedAtScene">Arrived at Scene</string>
+    <string name="text_DepartedScene">Departed Scene</string>
+    <string name="text_ArrivedAtMajorTraumaCentre">Arrived at Major Trauma Centre</string>
+    <string name="text_LasCadNumber">LAS CAD Number</string>
     <string name="title_activity_airway">Airway</string>
+    <string name="text_Airway">Airway</string>
+    <string name="text_Airway_Clear">Clear</string>
+    <string name="text_Airway_Obstructed">Obstructed</string>
+    <string name="text_AirwayType">Airway Type</string>
+    <string name="text_AirwayType_Oro">Oropharyngeal Airway</string>
+    <string name="text_AirwayType_Nas">Nasopharyngeal Airway</string>
+    <string name="text_RSI">RSI</string>
+    <string name="text_AirwayType_Pre">Pre-hospital</string>
+    <string name="text_Comments">Comments</string>
     <string name="title_activity_spine">Spine</string>
+    <string name="text_Spine_CervicalSpineProtected">Cervical Spine Protected</string>
+    <string name="text_Spine_NoCervicalSpineProtected">If No - cleared by whom</string>
+    <string name="text_Spine_ClearingCriteriaApplied">Clearing Criteria Applied</string>
+    <string name="text_Spine_Canadian">Canadian C.Spine Rule</string>
+    <string name="text_Spine_Nexus">Nexus</string>
     <string name="title_activity_breathing">Breathing</string>
 
     <string-array name="planets_array">
@@ -20,5 +41,12 @@
         <item>Uranus</item>
         <item>Neptune</item>
     </string-array>
+
+    <string name="title_activity_circulation">Circulation</string>
+    <string name="title_activity_disability">Disability</string>
+    <string name="title_activity_exposure">Exposure</string>
+    <string name="title_activity_bloods">Bloods</string>
+    <string name="title_activity_fast_scan">FastScan</string>
+    <string name="title_activity_summary">Summary</string>
 
 </resources>

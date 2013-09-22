@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Circulation">
+    <ScrollView
+        android:id="@+id/ScrlView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <LinearLayout
+            android:id="@+id/layoutForScroll"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Pulse"
+                android:layout_marginTop="10dp" />
+            <EditText
+                android:id="@+id/editText"
+                android:inputType="textMultiLine"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Systolic BP"
+                android:layout_marginTop="10dp" />
+            <EditText
+                android:id="@+id/editText"
+                android:inputType="textMultiLine"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Diastolic BP"
+                android:layout_marginTop="10dp" />
+            <EditText
+                android:id="@+id/editText"
+                android:inputType="textMultiLine"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Central Capilliary Refill"
+                android:layout_marginTop="10dp" />
+            <EditText
+                android:id="@+id/editText"
+                android:inputType="textMultiLine"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="BM"
+                android:layout_marginTop="10dp" />
+            <EditText
+                android:id="@+id/editText"
+                android:inputType="textMultiLine"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Heart Sounds"
+                android:layout_marginTop="10dp"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normal"
+                android:id="@+id/checkBox1"
+                android:checked="false"
+                android:onClick="onCheckboxClick_Option1" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Muffled"
+                android:id="@+id/checkBox2"
+                android:checked="false"
+                android:onClick="onCheckboxClick_Option2" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Cardiac Tamponade"
+                android:layout_marginTop="10dp"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:id="@+id/checkBox1"
+                android:checked="false"
+                android:onClick="onCheckboxClick_Option1" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/checkBox2"
+                android:checked="false"
+                android:onClick="onCheckboxClick_Option2" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Comment"
+                android:layout_marginTop="10dp" />
+            <EditText
+                android:id="@+id/editText"
+                android:inputType="textMultiLine"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Abdominal Examination"
+                android:layout_marginTop="10dp" />
+            <EditText
+                android:id="@+id/editText"
+                android:inputType="textMultiLine"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Pelvis Examination"
+                android:layout_marginTop="10dp" />
+            <EditText
+                android:id="@+id/editText"
+                android:inputType="textMultiLine"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Long Bone Fractures"
+                android:layout_marginTop="10dp" />
+            <EditText
+                android:id="@+id/editText"
+                android:inputType="textMultiLine"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Active Haemorrhage"
+                android:layout_marginTop="10dp" />
+            <EditText
+                android:id="@+id/editText"
+                android:inputType="textMultiLine"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_Next"
+                android:id="@+id/button"
+                android:onClick="onButtonClick_Next"
+                android:layout_alignBottom="@+id/ScrlView"
+                android:layout_alignRight="@+id/ScrlView"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

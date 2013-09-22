@@ -38,6 +38,30 @@
             android:name="uk.nhs.kch.asclepius.Breathing"
             android:label="@string/title_activity_breathing" >
         </activity>
+        <activity
+            android:name="uk.nhs.kch.asclepius.Circulation"
+            android:label="@string/title_activity_circulation" >
+        </activity>
+        <activity
+            android:name="uk.nhs.kch.asclepius.Disability"
+            android:label="@string/title_activity_disability" >
+        </activity>
+        <activity
+            android:name="uk.nhs.kch.asclepius.Exposure"
+            android:label="@string/title_activity_exposure" >
+        </activity>
+        <activity
+            android:name="uk.nhs.kch.asclepius.Bloods"
+            android:label="@string/title_activity_bloods" >
+        </activity>
+        <activity
+            android:name="uk.nhs.kch.asclepius.FastScan"
+            android:label="@string/title_activity_fast_scan" >
+        </activity>
+        <activity
+            android:name="uk.nhs.kch.asclepius.Summary"
+            android:label="@string/title_activity_summary" >
+        </activity>
     </application>
 
 </manifest>
