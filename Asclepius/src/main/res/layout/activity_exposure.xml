@@ -55,15 +55,13 @@
                 android:layout_height="wrap_content"
                 android:text="Wet Clothing Removed"
                 android:id="@+id/checkBox1"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option1" />
+                android:checked="false" />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Warming Blanket Applied"
                 android:id="@+id/checkBox2"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option2" />
+                android:checked="false" />
 
             <TextView
                 android:layout_width="fill_parent"
@@ -76,15 +74,13 @@
                 android:layout_height="wrap_content"
                 android:text="Yes"
                 android:id="@+id/checkBox1"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option1" />
+                android:checked="false" />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="No"
                 android:id="@+id/checkBox2"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option2" />
+                android:checked="false" />
 
             <TextView
                 android:layout_width="fill_parent"
@@ -165,14 +161,17 @@
                 android:layout_height="wrap_content" />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/button_Next"
                 android:id="@+id/button"
                 android:onClick="onButtonClick_Next"
                 android:layout_alignBottom="@+id/ScrlView"
                 android:layout_alignRight="@+id/ScrlView"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="10dp"
+                android:background="#6582ff"
+                android:textColor="#ffffff"
+                android:textSize="26dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
         </LinearLayout>
     </ScrollView>
 

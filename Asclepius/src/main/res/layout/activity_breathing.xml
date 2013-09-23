@@ -27,22 +27,19 @@
                 android:layout_height="wrap_content"
                 android:text="Central"
                 android:id="@+id/checkBox1"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option1" />
+                android:checked="false"/>
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Deviated - Left"
                 android:id="@+id/checkBox2"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option2" />
+                android:checked="false" />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Deviated - Rgiht"
                 android:id="@+id/checkBox2"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option3" />
+                android:checked="false" />
 
             <TextView
                 android:layout_width="fill_parent"
@@ -62,22 +59,19 @@
                 android:layout_height="wrap_content"
                 android:text="Decreased - Left"
                 android:id="@+id/checkBox2"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option2" />
+                android:checked="false" />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Decreased - Right"
                 android:id="@+id/checkBox2"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option3" />
+                android:checked="false" />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Decreased - Bilateral"
                 android:id="@+id/checkBox2"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option3" />
+                android:checked="false"/>
 
             <TextView
                 android:layout_width="fill_parent"
@@ -90,50 +84,43 @@
                 android:layout_height="wrap_content"
                 android:text="Resonant"
                 android:id="@+id/checkBox1"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option1" />
+                android:checked="false"/>
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Dull - Left"
                 android:id="@+id/checkBox2"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option2" />
+                android:checked="false" />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Dull - Right"
                 android:id="@+id/checkBox2"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option3" />
+                android:checked="false" />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Dull - Bilateral"
                 android:id="@+id/checkBox2"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option3" />
+                android:checked="false" />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Hyperesonant - Left"
                 android:id="@+id/checkBox2"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option2" />
+                android:checked="false" />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Hyperesonant - Right"
                 android:id="@+id/checkBox2"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option3" />
+                android:checked="false" />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Hyperesonant - Bilateral"
                 android:id="@+id/checkBox2"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option3" />
+                android:checked="false" />
 
             <TextView
                 android:layout_width="fill_parent"
@@ -146,29 +133,25 @@
                 android:layout_height="wrap_content"
                 android:text="Equal"
                 android:id="@+id/checkBox1"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option1" />
+                android:checked="false" />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Decreased - Left"
                 android:id="@+id/checkBox2"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option2" />
+                android:checked="false" />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Decreased - Right"
                 android:id="@+id/checkBox2"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option3" />
+                android:checked="false"/>
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Decreased - Bilateral"
                 android:id="@+id/checkBox2"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option3" />
+                android:checked="false" />
 
             <TextView
                 android:layout_width="fill_parent"
@@ -181,15 +164,13 @@
                 android:layout_height="wrap_content"
                 android:text="Yes"
                 android:id="@+id/checkBox1"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option1" />
+                android:checked="false" />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="No"
                 android:id="@+id/checkBox2"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option2" />
+                android:checked="false" />
 
             <TextView
                 android:layout_width="fill_parent"
@@ -215,29 +196,25 @@
                 android:layout_height="wrap_content"
                 android:text="Left"
                 android:id="@+id/checkBox1"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option1" />
+                android:checked="false" />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Right"
                 android:id="@+id/checkBox2"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option2" />
+                android:checked="false" />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Bilateral"
                 android:id="@+id/checkBox2"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option3" />
+                android:checked="false" />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="None"
                 android:id="@+id/checkBox2"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option3" />
+                android:checked="false" />
 
             <TextView
                 android:layout_width="fill_parent"
@@ -250,29 +227,25 @@
                 android:layout_height="wrap_content"
                 android:text="Left"
                 android:id="@+id/checkBox1"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option1" />
+                android:checked="false" />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Right"
                 android:id="@+id/checkBox2"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option2" />
+                android:checked="false" />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Bilateral"
                 android:id="@+id/checkBox2"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option3" />
+                android:checked="false" />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="None"
                 android:id="@+id/checkBox2"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option3" />
+                android:checked="false" />
 
             <TextView
                 android:layout_width="fill_parent"
@@ -314,14 +287,17 @@
                 android:layout_height="wrap_content" />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/button_Next"
                 android:id="@+id/button"
                 android:onClick="onButtonClick_Next"
                 android:layout_alignBottom="@+id/ScrlView"
                 android:layout_alignRight="@+id/ScrlView"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="10dp"
+                android:background="#6582ff"
+                android:textColor="#ffffff"
+                android:textSize="26dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
