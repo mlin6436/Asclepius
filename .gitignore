@@ -1,4 +1,16 @@
+# configuration files
 .gradle
 /local.properties
 /.idea/workspace.xml
 .DS_Store
+
+# build application files
+*.apk
+*.ap_
+
+# java class files
+*.class
+
+# generated files
+bin/
+gen/
