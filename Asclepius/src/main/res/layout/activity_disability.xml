@@ -27,7 +27,7 @@
             <Spinner
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/planets_spinner"
+                android:id="@+id/disability_eye_spinner"
                 android:layout_below="@+id/textView"
                 android:layout_alignLeft="@+id/textView" />
 
@@ -40,7 +40,7 @@
             <Spinner
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/verbal_spinner"
+                android:id="@+id/disability_verbal_spinner"
                 android:layout_below="@+id/textView"
                 android:layout_alignLeft="@+id/textView" />
 
@@ -53,7 +53,7 @@
             <Spinner
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/motor_spinner"
+                android:id="@+id/disability_motor_spinner"
                 android:layout_below="@+id/textView"
                 android:layout_alignLeft="@+id/textView" />
 
@@ -79,7 +79,7 @@
             <Spinner
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/left_pupil_size_spinner"
+                android:id="@+id/disability_leftpupilsize_spinner"
                 android:layout_below="@+id/textView"
                 android:layout_alignLeft="@+id/textView" />
 
@@ -92,7 +92,7 @@
             <Spinner
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/right_pupil_size_spinner"
+                android:id="@+id/disability_rightpupilsize_spinner"
                 android:layout_below="@+id/textView"
                 android:layout_alignLeft="@+id/textView" />
 

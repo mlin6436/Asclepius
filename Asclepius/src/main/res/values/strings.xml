@@ -31,15 +31,72 @@
     <string name="text_Spine_Nexus">Nexus</string>
     <string name="title_activity_breathing">Breathing</string>
 
-    <string-array name="planets_array">
-        <item>Mercury</item>
-        <item>Venus</item>
-        <item>Earth</item>
-        <item>Mars</item>
-        <item>Jupiter</item>
-        <item>Saturn</item>
-        <item>Uranus</item>
-        <item>Neptune</item>
+    <string-array name="disbility_eye">
+        <item>Open Spontaneously</item>
+        <item>Open to Speech</item>
+        <item>Open to Pain</item>
+        <item>Never Open</item>
+    </string-array>
+    <string-array name="disbility_verbal">
+        <item>Orientated</item>
+        <item>Confused</item>
+        <item>Inappropriate Words</item>
+        <item>Incomprehensible Sounds</item>
+        <item>No Response</item>
+    </string-array>
+    <string-array name="disbility_motor">
+        <item>Obeys Commands</item>
+        <item>Localises to Pain</item>
+        <item>Flexion Withdrawal</item>
+        <item>Decorticate Flexion</item>
+        <item>Decerebrate Extension</item>
+        <item>No Response</item>
+    </string-array>
+    <string-array name="disability_leftpupilsize">
+        <item>1 mm</item>
+        <item>2 mm</item>
+        <item>3 mm</item>
+        <item>4 mm</item>
+        <item>5 mm</item>
+        <item>6 mm</item>
+        <item>7 mm</item>
+        <item>8 mm</item>
+        <item>9 mm</item>
+        <item>10 mm</item>
+    </string-array>
+    <string-array name="disability_rightpupilsize">
+        <item>1 mm</item>
+        <item>2 mm</item>
+        <item>3 mm</item>
+        <item>4 mm</item>
+        <item>5 mm</item>
+        <item>6 mm</item>
+        <item>7 mm</item>
+        <item>8 mm</item>
+        <item>9 mm</item>
+        <item>10 mm</item>
+    </string-array>
+    <string-array name="exposure_site">
+        <item>Axilla</item>
+        <item>Oral</item>
+        <item>Rectal</item>
+        <item>Tympanic</item>
+    </string-array>
+    <string-array name="exposure_upperlimbpulses">
+        <item>Left</item>
+        <item>Right</item>
+        <item>Bilateral</item>
+        <item>None</item>
+    </string-array>
+    <string-array name="exposure_lowerlimbpulses">
+        <item>Left</item>
+        <item>Right</item>
+        <item>Bilateral</item>
+        <item>None</item>
+    </string-array>
+    <string-array name="bloods_bloodgastype">
+        <item>Arterial</item>
+        <item>Venous</item>
     </string-array>
 
     <string name="title_activity_circulation">Circulation</string>

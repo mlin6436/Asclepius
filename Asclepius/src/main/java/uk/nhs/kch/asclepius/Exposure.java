@@ -15,11 +15,23 @@ public class Exposure extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exposure);
 
-        Spinner spinner = (Spinner) findViewById(R.id.planets_spinner);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.planets_array, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
-        spinner.setAdapter(adapter);
+        Spinner exposure_site_spinner = (Spinner) findViewById(R.id.exposure_site_spinner);
+        ArrayAdapter<CharSequence> exposure_site_adapter = ArrayAdapter.createFromResource(this,
+                R.array.exposure_site, android.R.layout.simple_spinner_item);
+        exposure_site_adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        exposure_site_spinner.setAdapter(exposure_site_adapter);
+
+        Spinner exposure_upperlimbpulses_spinner = (Spinner) findViewById(R.id.exposure_upperlimbpulses_spinner);
+        ArrayAdapter<CharSequence> exposure_upperlimbpulses_adapter = ArrayAdapter.createFromResource(this,
+                R.array.exposure_upperlimbpulses, android.R.layout.simple_spinner_item);
+        exposure_upperlimbpulses_adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        exposure_upperlimbpulses_spinner.setAdapter(exposure_upperlimbpulses_adapter);
+
+        Spinner exposure_lowerlimbpulses_spinner = (Spinner) findViewById(R.id.exposure_lowerlimbpulses_spinner);
+        ArrayAdapter<CharSequence> exposure_lowerlimbpulses_adapter = ArrayAdapter.createFromResource(this,
+                R.array.exposure_lowerlimbpulses, android.R.layout.simple_spinner_item);
+        exposure_lowerlimbpulses_adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        exposure_lowerlimbpulses_spinner.setAdapter(exposure_lowerlimbpulses_adapter);
     }
 
     @Override

@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 public class Bloods extends Activity {
 
@@ -12,6 +14,12 @@ public class Bloods extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bloods);
+
+        Spinner bloods_bloodgastype_spinner = (Spinner) findViewById(R.id.bloods_bloodgastype_spinner);
+        ArrayAdapter<CharSequence> bloods_bloodgastype_adapter = ArrayAdapter.createFromResource(this,
+                R.array.disbility_eye, android.R.layout.simple_spinner_item);
+        bloods_bloodgastype_adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        bloods_bloodgastype_spinner.setAdapter(bloods_bloodgastype_adapter);
     }
 
 
