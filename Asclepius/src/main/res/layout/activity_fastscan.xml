@@ -56,6 +56,92 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content" />
 
+            <TextView
+                android:id="@+id/textView_TimeCTOrdered"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Time CT Ordered" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/textView_TimeCTOrdered_Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="120dp"
+                    android:height="50dp"
+                    android:background="#eeeeee"
+                    android:textSize="22dp"
+                    android:textAlignment="center" />
+                <TextView
+                    android:id="@+id/textView_TimeCTOrdered_Time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="60dp"
+                    android:height="50dp"
+                    android:background="#eeeeee"
+                    android:textSize="22dp" />
+                <Button
+                    android:id="@+id/button_TimeCTOrdered_Date"
+                    android:text="Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="70dp"
+                    android:height="50dp" />
+                <Button
+                    android:id="@+id/button_TimeCTOrdered_Time"
+                    android:text="Time"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:width="70dp"
+                    android:height="50dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_TimePatientInCT"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Time Patient in CT" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/textView_TimePatientInCT_Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="120dp"
+                    android:height="50dp"
+                    android:background="#eeeeee"
+                    android:textSize="22dp"
+                    android:textAlignment="center" />
+                <TextView
+                    android:id="@+id/textView_TimePatientInCT_Time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="60dp"
+                    android:height="50dp"
+                    android:background="#eeeeee"
+                    android:textSize="22dp" />
+                <Button
+                    android:id="@+id/button_TimePatientInCT_Date"
+                    android:text="Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="70dp"
+                    android:height="50dp" />
+                <Button
+                    android:id="@+id/button_TimePatientInCT_Time"
+                    android:text="Time"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:width="70dp"
+                    android:height="50dp" />
+            </LinearLayout>
+
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"

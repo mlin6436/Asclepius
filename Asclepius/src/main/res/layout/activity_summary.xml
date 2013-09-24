@@ -22,6 +22,62 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Trauma Team Lead Consultant"
+                android:layout_marginTop="10dp" />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/summary_traumateamleadconsultant_spinner"
+                android:layout_below="@+id/textView"
+                android:layout_alignLeft="@+id/textView" />
+
+            <TextView
+                android:id="@+id/textView_TimeofPlan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Time of Plan" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/textView_TimeOfPlan_Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="120dp"
+                    android:height="50dp"
+                    android:background="#eeeeee"
+                    android:textSize="22dp"
+                    android:textAlignment="center" />
+                <TextView
+                    android:id="@+id/textView_TimeOfPlan_Time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="60dp"
+                    android:height="50dp"
+                    android:background="#eeeeee"
+                    android:textSize="22dp" />
+                <Button
+                    android:id="@+id/button_TimeOfPlan_Date"
+                    android:text="Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="70dp"
+                    android:height="50dp" />
+                <Button
+                    android:id="@+id/button_TimeOfPlan_Time"
+                    android:text="Time"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:width="70dp"
+                    android:height="50dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Plan"
                 android:layout_marginTop="10dp" />
             <EditText

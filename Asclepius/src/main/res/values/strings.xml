@@ -103,7 +103,7 @@
     <string name="title_activity_disability">Disability</string>
     <string name="title_activity_exposure">Exposure</string>
     <string name="title_activity_bloods">Bloods</string>
-    <string name="title_activity_fast_scan">FastScan</string>
+    <string name="title_activity_fast_scan">Fast Scan</string>
     <string name="title_activity_summary">Summary</string>
 
 </resources>
