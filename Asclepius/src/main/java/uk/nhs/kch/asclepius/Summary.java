@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 import java.util.Calendar;
 
@@ -70,7 +71,7 @@ public class Summary extends Activity {
     }
 
     public void onButtonClick_Next(View view){
-
+        Toast.makeText(this, "Thanks for using this application, please click 'like' if you enjoy it.", Toast.LENGTH_SHORT).show();
     }
 
     @Override

@@ -87,19 +87,19 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content" />
 
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="Save"
-                android:id="@+id/button"
-                android:onClick="onButtonClick_Next"
-                android:layout_alignBottom="@+id/ScrlView"
-                android:layout_alignRight="@+id/ScrlView"
-                android:layout_marginTop="10dp"
-                android:background="#6582ff"
-                android:textColor="#ffffff"
-                android:textSize="26dp"/>
         </LinearLayout>
     </ScrollView>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Finish and Save"
+        android:id="@+id/button"
+        android:onClick="onButtonClick_Next"
+        android:background="#6582ff"
+        android:textColor="#ffffff"
+        android:textSize="26dp"
+        android:layout_alignBottom="@+id/ScrlView"
+        android:layout_alignLeft="@+id/ScrlView" />
 
 </RelativeLayout>
