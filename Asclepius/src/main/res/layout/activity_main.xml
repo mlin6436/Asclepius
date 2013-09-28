@@ -11,13 +11,15 @@
         android:id="@+id/layoutForScroll"
         android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
 
         <ImageView
             android:layout_width="fill_parent"
             android:layout_height="294dp"
             android:id="@+id/imageView"
-            android:src="@drawable/kings_100_years" />
+            android:src="@drawable/kings_100_years"
+            android:layout_gravity="center_horizontal" />
     </LinearLayout>
 
     <Button
