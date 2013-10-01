@@ -52,8 +52,7 @@
                 android:layout_height="wrap_content"
                 android:text="Equal"
                 android:id="@+id/checkBox1"
-                android:checked="false"
-                android:onClick="onCheckboxClick_Option1" />
+                android:checked="false" />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

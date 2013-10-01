@@ -23,6 +23,11 @@ public class Bloods extends Activity {
     private TextView textView_TimeCodeRedInitiated_Time;
     private Button button_TimeCodeRedInitiated_Time;
 
+    private TextView textView_TimeBloodsTaken_Date;
+    private Button button_TimeBloodsTaken_Date;
+    private TextView textView_TimeBloodsTaken_Time;
+    private Button button_TimeBloodsTaken_Time;
+
     private int mYear;
     private int mMonth;
     private int mDay;
@@ -31,6 +36,8 @@ public class Bloods extends Activity {
 
     static final int DATE_DIALOG_ID = 0;
     static final int TIME_DIALOG_ID = 1;
+    static final int DATE_DIALOG_ID_TIMEBLOODSTAKEN = 2;
+    static final int TIME_DIALOG_ID_TIMEBLOODSTAKEN = 3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +65,24 @@ public class Bloods extends Activity {
             @Override
             public void onClick(View v) {
                 showDialog(TIME_DIALOG_ID);
+            }
+        });
+
+        textView_TimeBloodsTaken_Date = (TextView) findViewById(R.id.textView_TimeBloodsTaken_Date);
+        button_TimeBloodsTaken_Date = (Button) findViewById(R.id.button_TimeBloodsTaken_Date);
+        textView_TimeBloodsTaken_Time = (TextView) findViewById(R.id.textView_TimeBloodsTaken_Time);
+        button_TimeBloodsTaken_Time = (Button) findViewById(R.id.button_TimeBloodsTaken_Time);
+
+        button_TimeBloodsTaken_Date.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                showDialog(DATE_DIALOG_ID_TIMEBLOODSTAKEN);
+            }
+        });
+
+        button_TimeBloodsTaken_Time.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showDialog(TIME_DIALOG_ID_TIMEBLOODSTAKEN);
             }
         });
 
@@ -89,6 +114,10 @@ public class Bloods extends Activity {
                 return new DatePickerDialog(this, mDateSetListener1, mYear, mMonth, mDay);
             case TIME_DIALOG_ID:
                 return new TimePickerDialog(this, mTimeSetListener1, mhour, mminute, false);
+            case DATE_DIALOG_ID_TIMEBLOODSTAKEN:
+                return new DatePickerDialog(this, mDateSetListener2, mYear, mMonth, mDay);
+            case TIME_DIALOG_ID_TIMEBLOODSTAKEN:
+                return new TimePickerDialog(this, mTimeSetListener2, mhour, mminute, false);
         }
         return null;
     }
@@ -127,6 +156,45 @@ public class Bloods extends Activity {
 
     public void updatetime1(){
         textView_TimeCodeRedInitiated_Time.setText(
+                new StringBuilder()
+                        .append(pad(mhour)).append(":")
+                        .append(pad(mminute)));
+    }
+
+    private DatePickerDialog.OnDateSetListener mDateSetListener2 =
+            new DatePickerDialog.OnDateSetListener() {
+
+                public void onDateSet(DatePicker view, int year,
+                                      int monthOfYear, int dayOfMonth) {
+                    mYear = year;
+                    mMonth = monthOfYear;
+                    mDay = dayOfMonth;
+                    updateDate2();
+                }
+            };
+
+    private TimePickerDialog.OnTimeSetListener mTimeSetListener2 =
+            new TimePickerDialog.OnTimeSetListener() {
+                public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+                    mhour = hourOfDay;
+                    mminute = minute;
+                    updatetime2();
+                }
+            };
+
+    private void updateDate2() {
+        textView_TimeBloodsTaken_Date.setText(
+                new StringBuilder()
+                        // Month is 0 based so add 1
+                        .append(mDay).append("/")
+                        .append(mMonth + 1).append("/")
+                        .append(mYear).append(" "));
+        showDialog(TIME_DIALOG_ID_TIMEBLOODSTAKEN);
+
+    }
+
+    public void updatetime2(){
+        textView_TimeBloodsTaken_Time.setText(
                 new StringBuilder()
                         .append(pad(mhour)).append(":")
                         .append(pad(mminute)));

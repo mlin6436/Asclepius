@@ -23,18 +23,6 @@ public class Airway extends Activity {
         return true;
     }
 
-    public void onCheckboxClick_Option1(View view){
-
-    }
-
-    public void onCheckboxClick_Option2(View view){
-
-    }
-
-    public void onCheckboxClick_Option3(View view){
-
-    }
-
     public void onButtonClick_Next(View view){
         Intent intent = new Intent(this, Spine.class);
         startActivity(intent);

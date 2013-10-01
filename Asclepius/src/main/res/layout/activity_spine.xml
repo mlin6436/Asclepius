@@ -26,32 +26,42 @@
                 android:id="@+id/layoutForScroll"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content" >
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_Yes"
-                    android:id="@+id/checkBox1"
-                    android:checked="false" />
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_No"
-                    android:id="@+id/checkBox2"
-                    android:checked="false" />
+                <RadioGroup
+                    android:id="@+id/radioGroup_Cervical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_alignParentLeft="true">
+                    <RadioButton android:id="@+id/radioButton_Cervical_Yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_Yes"
+                        android:checked="true"/>
+                    <RadioButton android:id="@+id/radioButton_Cervical_No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_No"/>
+                </RadioGroup>
             </LinearLayout>
 
-            <TextView
+            <LinearLayout
+                android:id="@+id/layoutForScroll_Cervical"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="@string/text_Spine_NoCervicalSpineProtected"
-                android:layout_marginTop="10dp" />
-            <EditText
-                android:id="@+id/editText"
-                android:inputType="textMultiLine"
-                android:layout_gravity="center"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content" />
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/text_Spine_NoCervicalSpineProtected"
+                    android:layout_marginTop="10dp" />
+                <EditText
+                    android:id="@+id/editText"
+                    android:inputType="textMultiLine"
+                    android:layout_gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
 
             <TextView
                 android:layout_width="fill_parent"
@@ -79,10 +89,10 @@
     </ScrollView>
 
     <Button
+        android:id="@+id/button"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_Next"
-        android:id="@+id/button"
+        android:text="@string/text_Next"
         android:onClick="onButtonClick_Next"
         android:background="#6582ff"
         android:textColor="#ffffff"

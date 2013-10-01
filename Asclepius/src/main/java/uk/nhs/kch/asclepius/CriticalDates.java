@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
@@ -17,24 +18,24 @@ import java.util.Calendar;
 
 public class CriticalDates extends Activity {
     private TextView textView_DateOfIncident_Date;
-    private Button button_dateOfIncident_Date;
+    private ImageButton button_dateOfIncident_Date;
     private TextView textView_DateOfIncident_Time;
-    private Button button_dateOfIncident_Time;
+    private ImageButton button_dateOfIncident_Time;
 
     private TextView textView_ArrivedAtScene_Date;
-    private Button button_ArrivedAtScene_Date;
+    private ImageButton button_ArrivedAtScene_Date;
     private TextView textView_ArrivedAtScene_Time;
-    private Button button_ArrivedAtScene_Time;
+    private ImageButton button_ArrivedAtScene_Time;
 
     private TextView textView_DepartedScene_Date;
-    private Button button_DepartedScene_Date;
+    private ImageButton button_DepartedScene_Date;
     private TextView textView_DepartedScene_Time;
-    private Button button_DepartedScene_Time;
+    private ImageButton button_DepartedScene_Time;
 
     private TextView textView_ArrivedAtMajorTraumaCentre_Date;
-    private Button button_ArrivedAtMajorTraumaCentre_Date;
+    private ImageButton button_ArrivedAtMajorTraumaCentre_Date;
     private TextView textView_ArrivedAtMajorTraumaCentre_Time;
-    private Button button_ArrivedAtMajorTraumaCentre_Time;
+    private ImageButton button_ArrivedAtMajorTraumaCentre_Time;
 
     private int mYear;
     private int mMonth;
@@ -57,9 +58,9 @@ public class CriticalDates extends Activity {
         setContentView(R.layout.activity_criticaldates);
 
         textView_DateOfIncident_Date = (TextView) findViewById(R.id.textView_DateOfIncident_Date);
-        button_dateOfIncident_Date = (Button) findViewById(R.id.button_DateOfIncident_Date);
+        button_dateOfIncident_Date = (ImageButton) findViewById(R.id.button_DateOfIncident_Date);
         textView_DateOfIncident_Time = (TextView) findViewById(R.id.textView_DateOfIncident_Time);
-        button_dateOfIncident_Time = (Button) findViewById(R.id.button_DateOfIncident_Time);
+        button_dateOfIncident_Time = (ImageButton) findViewById(R.id.button_DateOfIncident_Time);
 
         button_dateOfIncident_Date.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -75,9 +76,9 @@ public class CriticalDates extends Activity {
         });
 
         textView_ArrivedAtScene_Date = (TextView) findViewById(R.id.textView_ArrivedAtScene_Date);
-        button_ArrivedAtScene_Date = (Button) findViewById(R.id.button_ArrivedAtScene_Date);
+        button_ArrivedAtScene_Date = (ImageButton) findViewById(R.id.button_ArrivedAtScene_Date);
         textView_ArrivedAtScene_Time = (TextView) findViewById(R.id.textView_ArrivedAtScene_Time);
-        button_ArrivedAtScene_Time = (Button) findViewById(R.id.button_ArrivedAtScene_Time);
+        button_ArrivedAtScene_Time = (ImageButton) findViewById(R.id.button_ArrivedAtScene_Time);
 
         button_ArrivedAtScene_Date.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -93,9 +94,9 @@ public class CriticalDates extends Activity {
         });
 
         textView_DepartedScene_Date = (TextView) findViewById(R.id.textView_DepartedScene_Date);
-        button_DepartedScene_Date = (Button) findViewById(R.id.button_DepartedScene_Date);
+        button_DepartedScene_Date = (ImageButton) findViewById(R.id.button_DepartedScene_Date);
         textView_DepartedScene_Time = (TextView) findViewById(R.id.textView_DepartedScene_Time);
-        button_DepartedScene_Time = (Button) findViewById(R.id.button_DepartedScene_Time);
+        button_DepartedScene_Time = (ImageButton) findViewById(R.id.button_DepartedScene_Time);
 
         button_DepartedScene_Date.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -111,9 +112,9 @@ public class CriticalDates extends Activity {
         });
 
         textView_ArrivedAtMajorTraumaCentre_Date = (TextView) findViewById(R.id.textView_ArrivedAtMajorTraumaCentre_Date);
-        button_ArrivedAtMajorTraumaCentre_Date = (Button) findViewById(R.id.button_ArrivedAtMajorTraumaCentre_Date);
+        button_ArrivedAtMajorTraumaCentre_Date = (ImageButton) findViewById(R.id.button_ArrivedAtMajorTraumaCentre_Date);
         textView_ArrivedAtMajorTraumaCentre_Time = (TextView) findViewById(R.id.textView_ArrivedAtMajorTraumaCentre_Time);
-        button_ArrivedAtMajorTraumaCentre_Time = (Button) findViewById(R.id.button_ArrivedAtMajorTraumaCentre_Time);
+        button_ArrivedAtMajorTraumaCentre_Time = (ImageButton) findViewById(R.id.button_ArrivedAtMajorTraumaCentre_Time);
 
         button_ArrivedAtMajorTraumaCentre_Date.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

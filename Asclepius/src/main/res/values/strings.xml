@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="text_Yes">Yes</string>
+    <string name="text_No">No</string>
+    <string name="text_Next">Next</string>
+
+    <string name="text_Spine_CervicalSpineProtected">Cervical Spine Protected</string>
+    <string name="text_Spine_NoCervicalSpineProtected">If No - cleared by whom</string>
+    <string name="text_Spine_ClearingCriteriaApplied">Clearing Criteria Applied</string>
+    <string name="text_Spine_Canadian">Canadian C.Spine Rule</string>
+    <string name="text_Spine_Nexus">Nexus</string>
+
     <string name="app_name">Asclepius</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="button_Next">Next</string>
-    <string name="text_Yes">Yes</string>
-    <string name="text_No">No</string>
     <string name="title_activity_critical_dates">Critical Dates</string>
     <string name="text_DateOfIncident">Date of Incident</string>
     <string name="text_ArrivedAtScene">Arrived at Scene</string>
@@ -24,11 +32,7 @@
     <string name="text_AirwayType_Pre">Pre-hospital</string>
     <string name="text_Comments">Comments</string>
     <string name="title_activity_spine">Spine</string>
-    <string name="text_Spine_CervicalSpineProtected">Cervical Spine Protected</string>
-    <string name="text_Spine_NoCervicalSpineProtected">If No - cleared by whom</string>
-    <string name="text_Spine_ClearingCriteriaApplied">Clearing Criteria Applied</string>
-    <string name="text_Spine_Canadian">Canadian C.Spine Rule</string>
-    <string name="text_Spine_Nexus">Nexus</string>
+
     <string name="title_activity_breathing">Breathing</string>
 
     <string-array name="disbility_eye">

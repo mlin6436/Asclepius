@@ -10,7 +10,7 @@
     <ScrollView
         android:id="@+id/ScrlView"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent" >
+        android:layout_height="fill_parent">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
@@ -32,8 +32,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:width="120dp"
-                android:height="50dp"
-                android:background="#eeeeee"
+                android:height="40dp"
                 android:textSize="22dp"
                 android:textAlignment="center" />
             <TextView
@@ -41,23 +40,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:width="60dp"
-                android:height="50dp"
-                android:background="#eeeeee"
+                android:height="40dp"
                 android:textSize="22dp" />
-            <Button
+            <ImageButton
                 android:id="@+id/button_DateOfIncident_Date"
-                android:text="Date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:width="70dp"
-                android:height="50dp" />
-            <Button
+                android:src="@drawable/calendar"/>
+            <ImageButton
                 android:id="@+id/button_DateOfIncident_Time"
-                android:text="Time"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:width="70dp"
-                android:height="50dp" />
+                android:src="@drawable/clock"/>
         </LinearLayout>
         <TextView
             android:id="@+id/textView_ArrivedAtScene"
@@ -75,31 +69,25 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:width="120dp"
-                android:height="50dp"
-                android:background="#eeeeee"
+                android:height="40dp"
                 android:textSize="22dp" />
             <TextView
                 android:id="@+id/textView_ArrivedAtScene_Time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:width="60dp"
-                android:height="50dp"
-                android:background="#eeeeee"
+                android:height="40dp"
                 android:textSize="22dp" />
-            <Button
+            <ImageButton
                 android:id="@+id/button_ArrivedAtScene_Date"
-                android:text="Date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:width="70dp"
-                android:height="50dp"/>
-            <Button
+                android:src="@drawable/calendar"/>
+            <ImageButton
                 android:id="@+id/button_ArrivedAtScene_Time"
-                android:text="Time"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:width="70dp"
-                android:height="50dp" />
+                android:src="@drawable/clock"/>
         </LinearLayout>
         <TextView
             android:id="@+id/textView_DepartedScene"
@@ -117,31 +105,25 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:width="120dp"
-                android:height="50dp"
-                android:background="#eeeeee"
+                android:height="40dp"
                 android:textSize="22dp" />
             <TextView
                 android:id="@+id/textView_DepartedScene_Time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:width="60dp"
-                android:height="50dp"
-                android:background="#eeeeee"
+                android:height="40dp"
                 android:textSize="22dp" />
-            <Button
+            <ImageButton
                 android:id="@+id/button_DepartedScene_Date"
-                android:text="Date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:width="70dp"
-                android:height="50dp"/>
-            <Button
+                android:src="@drawable/calendar"/>
+            <ImageButton
                 android:id="@+id/button_DepartedScene_Time"
-                android:text="Time"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:width="70dp"
-                android:height="50dp" />
+                android:src="@drawable/clock"/>
         </LinearLayout>
         <TextView
             android:id="@+id/textView_ArrivedAtMajorTraumaCentre"
@@ -160,7 +142,6 @@
                 android:layout_height="wrap_content"
                 android:width="120dp"
                 android:height="40dp"
-                android:background="#eeeeee"
                 android:textSize="22dp" />
             <TextView
                 android:id="@+id/textView_ArrivedAtMajorTraumaCentre_Time"
@@ -168,22 +149,17 @@
                 android:layout_height="wrap_content"
                 android:width="60dp"
                 android:height="40dp"
-                android:background="#eeeeee"
                 android:textSize="22dp" />
-            <Button
+            <ImageButton
                 android:id="@+id/button_ArrivedAtMajorTraumaCentre_Date"
-                android:text="Date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:width="70dp"
-                android:height="40dp"/>
-            <Button
+                android:src="@drawable/calendar"/>
+            <ImageButton
                 android:id="@+id/button_ArrivedAtMajorTraumaCentre_Time"
-                android:text="Time"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:width="70dp"
-                android:height="40dp" />
+                android:src="@drawable/clock"/>
         </LinearLayout>
         <TextView
             android:layout_width="fill_parent"
@@ -196,7 +172,6 @@
             android:layout_gravity="center"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="#eeeeee"
             android:height="40dp"
             android:layout_marginTop="10dp"/>
         <Button
