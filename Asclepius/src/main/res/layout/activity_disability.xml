@@ -6,8 +6,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:focusableInTouchMode="true"
     tools:context=".Disability">
-
     <ScrollView
         android:id="@+id/ScrlView"
         android:layout_width="fill_parent"
@@ -17,192 +17,239 @@
             android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content" >
-
             <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Eyes"
-                android:layout_marginTop="10dp" />
-            <Spinner
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <Spinner
                 android:id="@+id/disability_eye_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_below="@+id/textView"
-                android:layout_alignLeft="@+id/textView" />
+                android:layout_alignLeft="@+id/textView"
+                />
 
             <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Verbal"
-                android:layout_marginTop="10dp" />
-            <Spinner
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <Spinner
                 android:id="@+id/disability_verbal_spinner"
-                android:layout_below="@+id/textView"
-                android:layout_alignLeft="@+id/textView" />
-
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Motor"
-                android:layout_marginTop="10dp" />
-            <Spinner
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/disability_motor_spinner"
                 android:layout_below="@+id/textView"
-                android:layout_alignLeft="@+id/textView" />
+                android:layout_alignLeft="@+id/textView"
+                />
 
             <TextView
+                android:text="Motor"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <Spinner
+                android:id="@+id/disability_motor_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_alignLeft="@+id/textView"
+                />
+
+            <TextView
                 android:text="Score"
-                android:layout_marginTop="10dp" />
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
             <EditText
                 android:id="@+id/editText_Score"
-                android:inputType="textMultiLine"
-                android:layout_gravity="center"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content" />
-
-            <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_gravity="center"
+                android:inputType="number"
+                />
+
+            <TextView
                 android:text="Left Pupil Size"
-                android:layout_marginTop="10dp" />
-            <Spinner
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <Spinner
                 android:id="@+id/disability_leftpupilsize_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_below="@+id/textView"
-                android:layout_alignLeft="@+id/textView" />
+                android:layout_alignLeft="@+id/textView"
+                />
 
             <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Right Pupil Size"
-                android:layout_marginTop="10dp" />
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
             <Spinner
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/disability_rightpupilsize_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_below="@+id/textView"
-                android:layout_alignLeft="@+id/textView" />
+                android:layout_alignLeft="@+id/textView"
+                />
 
             <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Left Pupil Reaction"
-                android:layout_marginTop="10dp"/>
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Yes"
-                android:id="@+id/checkBox1"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="No"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
-
-            <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left">
+                <CheckBox
+                    android:id="@+id/checkBox_LeftPupilReaction_Yes"
+                    android:text="Yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_LeftPupilReaction_No"
+                    android:text="No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+            </LinearLayout>
+
+            <TextView
                 android:text="Right Pupil Reaction"
-                android:layout_marginTop="10dp"/>
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Yes"
-                android:id="@+id/checkBox1"
-                android:checked="false"/>
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="No"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
-
-            <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left">
+                <CheckBox
+                    android:id="@+id/checkBox_RightPupilReaction_Yes"
+                    android:text="Yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_RightPupilReaction_No"
+                    android:text="No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+            </LinearLayout>
+
+            <TextView
                 android:text="Priapism"
-                android:layout_marginTop="10dp"/>
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Yes"
-                android:id="@+id/checkBox1"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="No"
-                android:id="@+id/checkBox2"
-                android:checked="false"/>
-
-            <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left">
+                <CheckBox
+                    android:id="@+id/checkBox_Priapism_Yes"
+                    android:text="Yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_Priapism_No"
+                    android:text="No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+            </LinearLayout>
+
+            <TextView
                 android:text="Moving All Limbs"
-                android:layout_marginTop="10dp"/>
-            <CheckBox
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="Yes"
-                android:id="@+id/checkBox1"
-                android:checked="false" />
-            <CheckBox
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="No"
-                android:id="@+id/checkBox2"
-                android:checked="false"/>
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Unconscious"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
+                android:layout_height="fill_parent"
+                android:layout_gravity="left">
+                <CheckBox
+                    android:id="@+id/checkBox_MovingAllLimbs_Yes"
+                    android:text="Yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_MovingAllLimbs_No"
+                    android:text="No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_MovingAllLimbs_Unconscious"
+                    android:text="Unconscious"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+            </LinearLayout>
 
             <TextView
+                android:text="Pain Score"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Pain Score"
-                android:layout_marginTop="10dp" />
+                />
             <EditText
-                android:id="@+id/editText"
-                android:inputType="textMultiLine"
-                android:layout_gravity="center"
+                android:id="@+id/editText_PainScore"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                />
 
             <Button
-                android:text="@string/button_Next"
                 android:id="@+id/button"
-                android:onClick="onButtonClick_Next"
-                android:layout_alignBottom="@+id/ScrlView"
-                android:layout_alignRight="@+id/ScrlView"
+                android:text="@string/text_Next"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
                 android:background="#6582ff"
                 android:textColor="#ffffff"
                 android:textSize="26dp"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"/>
+                android:onClick="onButtonClick_Next"
+                />
         </LinearLayout>
     </ScrollView>
 

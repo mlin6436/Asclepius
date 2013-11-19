@@ -6,6 +6,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:focusableInTouchMode="true"
     tools:context=".Breathing">
     <ScrollView
         android:id="@+id/ScrlView"
@@ -13,290 +14,374 @@
         android:layout_height="fill_parent" >
         <LinearLayout
             android:id="@+id/layoutForScroll"
-            android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content" >
-
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
             <TextView
+                android:text="Trachea"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Trachea" />
-            <CheckBox
+                />
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Central"
-                android:id="@+id/checkBox1"
-                android:checked="false"/>
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Deviated - Left"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Deviated - Rgiht"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
+                android:layout_height="fill_parent"
+                android:layout_gravity="left">
+                <CheckBox
+                    android:id="@+id/checkBox_Trachea_Centeral"
+                    android:text="Central"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_Trachea_Left"
+                    android:text="Deviated - Left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_Trachea_Right"
+                    android:text="Deviated - Rgiht"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+            </LinearLayout>
+
 
             <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Expansion"
-                android:layout_marginTop="10dp"/>
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Equal"
-                android:id="@+id/checkBox1"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Decreased - Left"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Decreased - Right"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Decreased - Bilateral"
-                android:id="@+id/checkBox2"
-                android:checked="false"/>
-
-            <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left">
+                <CheckBox
+                    android:id="@+id/checkBox_Expansion_Equal"
+                    android:text="Equal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_Expansion_Left"
+                    android:text="Decreased - Left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_Expansion_Right"
+                    android:text="Decreased - Right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_Expansion_Bilateral"
+                    android:text="Decreased - Bilateral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+            </LinearLayout>
+
+            <TextView
                 android:text="Percussion"
-                android:layout_marginTop="10dp"/>
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Resonant"
-                android:id="@+id/checkBox1"
-                android:checked="false"/>
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Dull - Left"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Dull - Right"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Dull - Bilateral"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hyperesonant - Left"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hyperesonant - Right"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hyperesonant - Bilateral"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
-
-            <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left">
+                <CheckBox
+                    android:id="@+id/checkBox_Percussion_Resonant"
+                    android:text="Resonant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_Percussion_DullLeft"
+                    android:text="Dull - Left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_Percussion_DullRight"
+                    android:text="Dull - Right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_Percussion_DullBilateral"
+                    android:text="Dull - Bilateral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left">
+                <CheckBox
+                    android:id="@+id/checkBox_Percussion_HyperesonantLeft"
+                    android:text="Hyperesonant - Left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_Percussion_HyperesonantRight"
+                    android:text="Hyperesonant - Right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_Percussion_HyperesonantBilateral"
+                    android:text="Hyperesonant - Bilateral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+            </LinearLayout>
+
+            <TextView
                 android:text="Breath Sounds"
-                android:layout_marginTop="10dp"/>
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Equal"
-                android:id="@+id/checkBox1"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Decreased - Left"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Decreased - Right"
-                android:id="@+id/checkBox2"
-                android:checked="false"/>
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Decreased - Bilateral"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
-
-            <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left">
+                <CheckBox
+                    android:id="@+id/checkBox_BreathSounds_Equal"
+                    android:text="Equal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_BreathSounds_Left"
+                    android:text="Decreased - Left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_BreathSounds_Right"
+                    android:text="Decreased - Right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_BreathSounds_Bilateral"
+                    android:text="Decreased - Bilateral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+            </LinearLayout>
+
+            <TextView
                 android:text="Chest Wall Injury"
-                android:layout_marginTop="10dp"/>
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Yes"
-                android:id="@+id/checkBox1"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="No"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
-
-            <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left">
+                <CheckBox
+                    android:id="@+id/checkBox_ChestWallInjury_Yes"
+                    android:text="@string/text_Yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_ChestWallInjury_No"
+                    android:text="@string/text_No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+            </LinearLayout>
+
+            <TextView
                 android:text="Describe injury"
-                android:layout_marginTop="10dp" />
-            <EditText
-                android:id="@+id/editText"
-                android:inputType="textMultiLine"
-                android:layout_gravity="center"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content" />
-
-            <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <EditText
+                android:id="@+id/editText_DescribeInjury"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textMultiLine"
+                />
+
+            <TextView
                 android:text="Needle Thorococentesis"
-                android:layout_marginTop="10dp"/>
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Left"
-                android:id="@+id/checkBox1"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Right"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Bilateral"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="None"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
-
-            <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left">
+                <CheckBox
+                    android:id="@+id/checkBox_NeedleThorococentesis_Left"
+                    android:text="Left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_NeedleThorococentesis_Right"
+                    android:text="Right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_NeedleThorococentesis_Bilateral"
+                    android:text="Bilateral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_NeedleThorococentesis_None"
+                    android:text="None"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+            </LinearLayout>
+
+            <TextView
                 android:text="Thorococentesis"
-                android:layout_marginTop="10dp"/>
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Left"
-                android:id="@+id/checkBox1"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Right"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Bilateral"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="None"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
-
-            <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left">
+                <CheckBox
+                    android:id="@+id/checkBox_Thorococentesis_Left"
+                    android:text="Left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_Thorococentesis_Right"
+                    android:text="Right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_Thorococentesis_Bilateral"
+                    android:text="Bilateral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_Thorococentesis_None"
+                    android:text="None"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+            </LinearLayout>
+
+            <TextView
                 android:text="Respiratory Rate"
-                android:layout_marginTop="10dp" />
-            <EditText
-                android:id="@+id/editText"
-                android:inputType="textMultiLine"
-                android:layout_gravity="center"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content" />
-
-            <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <EditText
+                android:id="@+id/editText_RespiratoryRate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                />
+
+            <TextView
                 android:text="O2 Saturation"
-                android:layout_marginTop="10dp" />
-            <EditText
-                android:id="@+id/editText"
-                android:inputType="textMultiLine"
-                android:layout_gravity="center"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content" />
-
-            <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="FiO2"
-                android:layout_marginTop="10dp" />
+                />
             <EditText
-                android:id="@+id/editText"
-                android:inputType="textMultiLine"
-                android:layout_gravity="center"
+                android:id="@+id/editText_O2Saturation"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:text="FiO2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <EditText
+                android:id="@+id/editText_FiO2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                />
 
             <Button
-                android:text="@string/button_Next"
                 android:id="@+id/button"
-                android:onClick="onButtonClick_Next"
-                android:layout_alignBottom="@+id/ScrlView"
-                android:layout_alignRight="@+id/ScrlView"
+                android:text="@string/text_Next"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
                 android:background="#6582ff"
                 android:textColor="#ffffff"
                 android:textSize="26dp"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"/>
+                android:onClick="onButtonClick_Next"
+                />
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

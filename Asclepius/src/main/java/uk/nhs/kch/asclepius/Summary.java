@@ -9,8 +9,10 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
@@ -19,9 +21,9 @@ import java.util.Calendar;
 
 public class Summary extends Activity {
     private TextView textView_TimeOfPlan_Date;
-    private Button button_TimeOfPlan_Date;
+    private ImageButton button_TimeOfPlan_Date;
     private TextView textView_TimeOfPlan_Time;
-    private Button button_TimeOfPlan_Time;
+    private ImageButton button_TimeOfPlan_Time;
 
     private int mYear;
     private int mMonth;
@@ -36,11 +38,12 @@ public class Summary extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_summary);
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
         textView_TimeOfPlan_Date = (TextView) findViewById(R.id.textView_TimeOfPlan_Date);
-        button_TimeOfPlan_Date = (Button) findViewById(R.id.button_TimeOfPlan_Date);
+        button_TimeOfPlan_Date = (ImageButton) findViewById(R.id.button_TimeOfPlan_Date);
         textView_TimeOfPlan_Time = (TextView) findViewById(R.id.textView_TimeOfPlan_Time);
-        button_TimeOfPlan_Time = (Button) findViewById(R.id.button_TimeOfPlan_Time);
+        button_TimeOfPlan_Time = (ImageButton) findViewById(R.id.button_TimeOfPlan_Time);
 
         button_TimeOfPlan_Date.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

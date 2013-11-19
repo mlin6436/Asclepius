@@ -6,25 +6,25 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:focusableInTouchMode="true"
     tools:context=".Bloods">
-
     <ScrollView
         android:id="@+id/ScrlView"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" >
         <LinearLayout
             android:id="@+id/layoutForScroll"
-            android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content" >
-
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
             <TextView
+                android:text="Time Bloods Taken"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Time Bloods Taken"
-                android:layout_marginTop="10dp" />
-            <LinearLayout
+                />
+            <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp">
@@ -32,201 +32,247 @@
                     android:id="@+id/textView_TimeBloodsTaken_Date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
                     android:width="120dp"
-                    android:height="50dp"
-                    android:background="#eeeeee"
+                    android:height="40dp"
                     android:textSize="22dp"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    />
                 <TextView
                     android:id="@+id/textView_TimeBloodsTaken_Time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="140dp"
                     android:width="60dp"
-                    android:height="50dp"
-                    android:background="#eeeeee"
-                    android:textSize="22dp" />
-                <Button
+                    android:height="40dp"
+                    android:textSize="22dp"
+                    />
+                <ImageButton
                     android:id="@+id/button_TimeBloodsTaken_Date"
-                    android:text="Date"
+                    android:src="@drawable/calendar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:width="70dp"
-                    android:height="50dp" />
-                <Button
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="60dp"
+                    />
+                <ImageButton
                     android:id="@+id/button_TimeBloodsTaken_Time"
-                    android:text="Time"
+                    android:src="@drawable/clock"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:width="70dp"
-                    android:height="50dp" />
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:text="Blood Tests"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left">
+                <CheckBox
+                    android:id="@+id/checkBox_BloodTests_FBC"
+                    android:text="FBC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_BloodTests_UandE"
+                    android:text="U and E"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_BloodTests_Amylase"
+                    android:text="Amylase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_BloodTests_CoagulationScreen"
+                    android:text="Coagulation Screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left">
+                <CheckBox
+                    android:id="@+id/checkBox_BloodTests_BhCG"
+                    android:text="BhCG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_BloodTests_GroupandSave"
+                    android:text="Group and Save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_BloodTests_ClausFibrinongen"
+                    android:text="Claus Fibrinongen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
             </LinearLayout>
 
             <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Blood Tests"
-                android:layout_marginTop="10dp"/>
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="FBC"
-                android:id="@+id/checkBox1"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="U and E"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Amylase"
-                android:id="@+id/checkBox1"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Coagulation Screen"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="BhCG"
-                android:id="@+id/checkBox1"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Group and Save"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Claus Fibrinongen"
-                android:id="@+id/checkBox1"
-                android:checked="false" />
-
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Blood Gas Type"
-                android:layout_marginTop="10dp" />
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
             <Spinner
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/bloods_bloodgastype_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_below="@+id/textView"
-                android:layout_alignLeft="@+id/textView" />
+                android:layout_alignLeft="@+id/textView" 
+                />
 
             <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="pH"
-                android:layout_marginTop="10dp" />
-            <EditText
-                android:id="@+id/editText"
-                android:inputType="textMultiLine"
-                android:layout_gravity="center"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content" />
-
-            <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <EditText
+                android:id="@+id/editText_pH"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textImeMultiLine"
+                />
+
+            <TextView
                 android:text="pO2"
-                android:layout_marginTop="10dp" />
-            <EditText
-                android:id="@+id/editText"
-                android:inputType="textMultiLine"
-                android:layout_gravity="center"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content" />
-
-            <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <EditText
+                android:id="@+id/editText_pO2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textImeMultiLine"
+                />
+
+            <TextView
                 android:text="pCO2"
-                android:layout_marginTop="10dp" />
-            <EditText
-                android:id="@+id/editText"
-                android:inputType="textMultiLine"
-                android:layout_gravity="center"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content" />
-
-            <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <EditText
+                android:id="@+id/editText_pCO2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textImeMultiLine"
+                />
+
+            <TextView
                 android:text="HCO3"
-                android:layout_marginTop="10dp" />
-            <EditText
-                android:id="@+id/editText"
-                android:inputType="textMultiLine"
-                android:layout_gravity="center"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content" />
-
-            <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <EditText
+                android:id="@+id/editText_HCO3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textImeMultiLine"
+                />
+
+            <TextView
                 android:text="Lactate"
-                android:layout_marginTop="10dp" />
-            <EditText
-                android:id="@+id/editText"
-                android:inputType="textMultiLine"
-                android:layout_gravity="center"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content" />
-
-            <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <EditText
+                android:id="@+id/editText_Lactate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textImeMultiLine"
+                />
+
+            <TextView
                 android:text="BE"
-                android:layout_marginTop="10dp" />
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
             <EditText
-                android:id="@+id/editText"
-                android:inputType="textMultiLine"
+                android:id="@+id/editText_BE"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content" />
+                android:inputType="textImeMultiLine"
+                />
 
             <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Code Red Initiated"
-                android:layout_marginTop="10dp"/>
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Yes"
-                android:id="@+id/checkBox1"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="No"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
-
-            <TextView
-                android:id="@+id/textView_TimeCodeRedInitiated"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Time Code Red Initiated" />
+                />
             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left">
+                <CheckBox
+                    android:id="@+id/checkBox_CodeRedInitiated_Yes"
+                    android:text="Yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_CodeRedInitiated_No"
+                    android:text="No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:text="Time Code Red Initiated"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp">
@@ -234,98 +280,121 @@
                     android:id="@+id/textView_TimeCodeRedInitiated_Date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
                     android:width="120dp"
-                    android:height="50dp"
-                    android:background="#eeeeee"
+                    android:height="40dp"
                     android:textSize="22dp"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    />
                 <TextView
                     android:id="@+id/textView_TimeCodeRedInitiated_Time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="140dp"
                     android:width="60dp"
-                    android:height="50dp"
-                    android:background="#eeeeee"
-                    android:textSize="22dp" />
-                <Button
+                    android:height="40dp"
+                    android:textSize="22dp"
+                    />
+                <ImageButton
                     android:id="@+id/button_TimeCodeRedInitiated_Date"
-                    android:text="Date"
+                    android:src="@drawable/calendar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:width="70dp"
-                    android:height="50dp" />
-                <Button
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="60dp"
+                    />
+                <ImageButton
                     android:id="@+id/button_TimeCodeRedInitiated_Time"
-                    android:text="Time"
+                    android:src="@drawable/clock"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:width="70dp"
-                    android:height="50dp" />
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:text="Tranexamic Acid 1 Gram"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left">
+                <CheckBox
+                    android:id="@+id/checkBox_TranexamicAcid1Gram_Yes"
+                    android:text="Yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_TranexamicAcid1Gram_No"
+                    android:text="No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
             </LinearLayout>
 
             <TextView
+                android:text="Tranexamic Acid Infusion Commenced"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Tranexamic Acid 1 gram"
-                android:layout_marginTop="10dp"/>
-            <CheckBox
+                />
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Yes"
-                android:id="@+id/checkBox1"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="No"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
+                android:layout_height="fill_parent"
+                android:layout_gravity="left">
+                <CheckBox
+                    android:id="@+id/checkBox_TranexamicAcidInfusionCommenced_Yes"
+                    android:text="Yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_TranexamicAcidInfusionCommenced_No"
+                    android:text="No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+            </LinearLayout>
 
             <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Tranexamic Acid Infusion Commenced"
-                android:layout_marginTop="10dp"/>
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Yes"
-                android:id="@+id/checkBox1"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="No"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
-
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Further Comment"
-                android:layout_marginTop="10dp" />
-            <EditText
-                android:id="@+id/editText"
-                android:inputType="textMultiLine"
-                android:layout_gravity="center"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <EditText
+                android:id="@+id/editText_FurtherComment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textImeMultiLine"
+                />
 
             <Button
-                android:text="@string/button_Next"
                 android:id="@+id/button"
-                android:onClick="onButtonClick_Next"
-                android:layout_alignBottom="@+id/ScrlView"
-                android:layout_alignRight="@+id/ScrlView"
+                android:text="@string/text_Next"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
                 android:background="#6582ff"
                 android:textColor="#ffffff"
                 android:textSize="26dp"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"/>
+                android:onClick="onButtonClick_Next"
+                />
         </LinearLayout>
     </ScrollView>
 

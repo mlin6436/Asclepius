@@ -8,8 +8,10 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
@@ -17,14 +19,14 @@ import java.util.Calendar;
 
 public class FastScan extends Activity {
     private TextView textView_TimeCTOrdered_Date;
-    private Button button_TimeCTOrdered_Date;
+    private ImageButton button_TimeCTOrdered_Date;
     private TextView textView_TimeCTOrdered_Time;
-    private Button button_TimeCTOrdered_Time;
+    private ImageButton button_TimeCTOrdered_Time;
 
     private TextView textView_TimePatientInCT_Date;
-    private Button button_TimePatientInCT_Date;
+    private ImageButton button_TimePatientInCT_Date;
     private TextView textView_TimePatientInCT_Time;
-    private Button button_TimePatientInCT_Time;
+    private ImageButton button_TimePatientInCT_Time;
 
     private int mYear;
     private int mMonth;
@@ -41,11 +43,12 @@ public class FastScan extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fastscan);
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
         textView_TimeCTOrdered_Date = (TextView) findViewById(R.id.textView_TimeCTOrdered_Date);
-        button_TimeCTOrdered_Date = (Button) findViewById(R.id.button_TimeCTOrdered_Date);
+        button_TimeCTOrdered_Date = (ImageButton) findViewById(R.id.button_TimeCTOrdered_Date);
         textView_TimeCTOrdered_Time = (TextView) findViewById(R.id.textView_TimeCTOrdered_Time);
-        button_TimeCTOrdered_Time = (Button) findViewById(R.id.button_TimeCTOrdered_Time);
+        button_TimeCTOrdered_Time = (ImageButton) findViewById(R.id.button_TimeCTOrdered_Time);
 
         button_TimeCTOrdered_Date.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -61,9 +64,9 @@ public class FastScan extends Activity {
         });
 
         textView_TimePatientInCT_Date = (TextView) findViewById(R.id.textView_TimePatientInCT_Date);
-        button_TimePatientInCT_Date = (Button) findViewById(R.id.button_TimePatientInCT_Date);
+        button_TimePatientInCT_Date = (ImageButton) findViewById(R.id.button_TimePatientInCT_Date);
         textView_TimePatientInCT_Time = (TextView) findViewById(R.id.textView_TimePatientInCT_Time);
-        button_TimePatientInCT_Time = (Button) findViewById(R.id.button_TimePatientInCT_Time);
+        button_TimePatientInCT_Time = (ImageButton) findViewById(R.id.button_TimePatientInCT_Time);
 
         button_TimePatientInCT_Date.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

@@ -6,8 +6,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:focusableInTouchMode="true"
     tools:context=".Summary">
-
     <ScrollView
         android:id="@+id/ScrlView"
         android:layout_width="fill_parent"
@@ -17,27 +17,29 @@
             android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content" >
-
             <TextView
+                android:text="Trauma Team Lead Consultant"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Trauma Team Lead Consultant"
-                android:layout_marginTop="10dp" />
+                />
             <Spinner
+                android:id="@+id/summary_traumateamleadconsultant_spinner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/summary_traumateamleadconsultant_spinner"
                 android:layout_below="@+id/textView"
-                android:layout_alignLeft="@+id/textView" />
+                android:layout_alignLeft="@+id/textView" 
+                />
 
             <TextView
-                android:id="@+id/textView_TimeofPlan"
+                android:text="Time of Plan"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Time of Plan" />
-            <LinearLayout
+                />
+            <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp">
@@ -45,61 +47,66 @@
                     android:id="@+id/textView_TimeOfPlan_Date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
                     android:width="120dp"
-                    android:height="50dp"
-                    android:background="#eeeeee"
+                    android:height="40dp"
                     android:textSize="22dp"
-                    android:textAlignment="center" />
+                    />
                 <TextView
                     android:id="@+id/textView_TimeOfPlan_Time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="140dp"
                     android:width="60dp"
-                    android:height="50dp"
-                    android:background="#eeeeee"
-                    android:textSize="22dp" />
-                <Button
+                    android:height="40dp"
+                    android:textSize="22dp"
+                    />
+                <ImageButton
                     android:id="@+id/button_TimeOfPlan_Date"
-                    android:text="Date"
+                    android:src="@drawable/calendar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:width="70dp"
-                    android:height="50dp" />
-                <Button
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="60dp"
+                    />
+                <ImageButton
                     android:id="@+id/button_TimeOfPlan_Time"
-                    android:text="Time"
+                    android:src="@drawable/clock"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:width="70dp"
-                    android:height="50dp" />
-            </LinearLayout>
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
 
             <TextView
+                android:text="Plan"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Plan"
-                android:layout_marginTop="10dp" />
+                />
             <EditText
-                android:id="@+id/editText"
-                android:inputType="textMultiLine"
-                android:layout_gravity="center"
+                android:id="@+id/editText_Plan"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content" />
-
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textImeMultiLine"
+                />
+                
+            <Button
+                android:id="@+id/button"
+                android:text="@string/text_Next"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="#6582ff"
+                android:textColor="#ffffff"
+                android:textSize="26dp"
+                android:onClick="onButtonClick_Next"
+                />
         </LinearLayout>
     </ScrollView>
-
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Finish and Save"
-        android:id="@+id/button"
-        android:onClick="onButtonClick_Next"
-        android:background="#6582ff"
-        android:textColor="#ffffff"
-        android:textSize="26dp"
-        android:layout_alignBottom="@+id/ScrlView"
-        android:layout_alignLeft="@+id/ScrlView" />
-
 </RelativeLayout>

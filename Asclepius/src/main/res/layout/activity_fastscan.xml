@@ -6,8 +6,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:focusableInTouchMode="true"
     tools:context=".FastScan">
-
     <ScrollView
         android:id="@+id/ScrlView"
         android:layout_width="fill_parent"
@@ -17,52 +17,63 @@
             android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content" >
-
             <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Fast Scan"
-                android:layout_marginTop="10dp"/>
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Intra-Abdominal Blood"
-                android:id="@+id/checkBox1"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Peri-Vesical Blood"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pericardial Blood"
-                android:id="@+id/checkBox2"
-                android:checked="false" />
-
-            <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Fast Scan Performed By (Name)"
-                android:layout_marginTop="10dp" />
-            <EditText
-                android:id="@+id/editText"
-                android:inputType="textMultiLine"
-                android:layout_gravity="center"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/textView_TimeCTOrdered"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Time CT Ordered" />
+                />
             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left">
+                <CheckBox
+                    android:id="@+id/checkBox_FastScan_IntraAbdominalBlood"
+                    android:text="Intra-Abdominal Blood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_FastScan_PeriVesicalBlood"
+                    android:text="Peri-Vesical Blood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+                <CheckBox
+                    android:id="@+id/checkBox_FastScan_PericardialBlood"
+                    android:text="Pericardial Blood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:text="Fast Scan Performed By (Name)"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <EditText
+                android:id="@+id/editText_FastScanPerformedBy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textImeMultiLine"
+                />
+            
+            <TextView
+                android:text="Time CT Ordered"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp">
@@ -70,42 +81,47 @@
                     android:id="@+id/textView_TimeCTOrdered_Date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
                     android:width="120dp"
-                    android:height="50dp"
-                    android:background="#eeeeee"
+                    android:height="40dp"
                     android:textSize="22dp"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    />
                 <TextView
                     android:id="@+id/textView_TimeCTOrdered_Time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="140dp"
                     android:width="60dp"
-                    android:height="50dp"
-                    android:background="#eeeeee"
-                    android:textSize="22dp" />
-                <Button
+                    android:height="40dp"
+                    android:textSize="22dp"
+                    />
+                <ImageButton
                     android:id="@+id/button_TimeCTOrdered_Date"
-                    android:text="Date"
+                    android:src="@drawable/calendar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:width="70dp"
-                    android:height="50dp" />
-                <Button
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="60dp"
+                    />
+                <ImageButton
                     android:id="@+id/button_TimeCTOrdered_Time"
-                    android:text="Time"
+                    android:src="@drawable/clock"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:width="70dp"
-                    android:height="50dp" />
-            </LinearLayout>
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
 
             <TextView
-                android:id="@+id/textView_TimePatientInCT"
+                android:text="Time Patient in CT"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Time Patient in CT" />
-            <LinearLayout
+                />
+            <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp">
@@ -113,48 +129,52 @@
                     android:id="@+id/textView_TimePatientInCT_Date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
                     android:width="120dp"
-                    android:height="50dp"
-                    android:background="#eeeeee"
+                    android:height="40dp"
                     android:textSize="22dp"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    />
                 <TextView
                     android:id="@+id/textView_TimePatientInCT_Time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="140dp"
                     android:width="60dp"
-                    android:height="50dp"
-                    android:background="#eeeeee"
-                    android:textSize="22dp" />
-                <Button
+                    android:height="40dp"
+                    android:textSize="22dp"
+                    />
+                <ImageButton
                     android:id="@+id/button_TimePatientInCT_Date"
-                    android:text="Date"
+                    android:src="@drawable/calendar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:width="70dp"
-                    android:height="50dp" />
-                <Button
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="60dp"
+                    />
+                <ImageButton
                     android:id="@+id/button_TimePatientInCT_Time"
-                    android:text="Time"
+                    android:src="@drawable/clock"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:width="70dp"
-                    android:height="50dp" />
-            </LinearLayout>
-
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+                
+            <Button
+                android:id="@+id/button"
+                android:text="@string/text_Next"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="#6582ff"
+                android:textColor="#ffffff"
+                android:textSize="26dp"
+                android:onClick="onButtonClick_Next"
+                />
         </LinearLayout>
     </ScrollView>
-
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/button_Next"
-        android:id="@+id/button"
-        android:onClick="onButtonClick_Next"
-        android:background="#6582ff"
-        android:textColor="#ffffff"
-        android:textSize="26dp"
-        android:layout_alignBottom="@+id/ScrlView"
-        android:layout_alignLeft="@+id/ScrlView" />
-
 </RelativeLayout>

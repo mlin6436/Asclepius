@@ -6,33 +6,25 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:focusableInTouchMode="true"
     tools:context=".CriticalDates">
-    <LinearLayout
-        android:id="@+id/layoutForScroll"
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="#ffffff" >
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="154dp"
-            android:layout_height="154dp"
-            android:layout_margin="100dp"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/kings"/>
-    </LinearLayout>
-
-    <Button
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start"
+        android:layout_gravity="center_vertical"
+        android:layout_centerInParent="true"
+        android:src="@drawable/kings"
+        />
+    <Button
         android:id="@+id/button"
-        android:onClick="onButtonClick_Next"
+        android:text="@string/button_Start"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/layoutForScroll"
-        android:layout_alignRight="@+id/layoutForScroll"
         android:background="#6582ff"
         android:textColor="#ffffff"
-        android:textSize="26dp" />
+        android:textSize="26dp"
+        android:onClick="onButtonClick_Next"
+        />
 </RelativeLayout>

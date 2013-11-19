@@ -6,6 +6,7 @@ import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.Transformation;
 import android.widget.CheckBox;
@@ -19,6 +20,7 @@ public class Spine extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spine);
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
         RadioGroup radioGroup_Cervical = (RadioGroup) findViewById(R.id.radioGroup_Cervical);
         radioGroup_Cervical.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {

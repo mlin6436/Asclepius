@@ -8,9 +8,11 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
@@ -19,14 +21,14 @@ import java.util.Calendar;
 
 public class Bloods extends Activity {
     private TextView textView_TimeCodeRedInitiated_Date;
-    private Button button_TimeCodeRedInitiated_Date;
+    private ImageButton button_TimeCodeRedInitiated_Date;
     private TextView textView_TimeCodeRedInitiated_Time;
-    private Button button_TimeCodeRedInitiated_Time;
+    private ImageButton button_TimeCodeRedInitiated_Time;
 
     private TextView textView_TimeBloodsTaken_Date;
-    private Button button_TimeBloodsTaken_Date;
+    private ImageButton button_TimeBloodsTaken_Date;
     private TextView textView_TimeBloodsTaken_Time;
-    private Button button_TimeBloodsTaken_Time;
+    private ImageButton button_TimeBloodsTaken_Time;
 
     private int mYear;
     private int mMonth;
@@ -43,6 +45,7 @@ public class Bloods extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bloods);
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
         Spinner bloods_bloodgastype_spinner = (Spinner) findViewById(R.id.bloods_bloodgastype_spinner);
         ArrayAdapter<CharSequence> bloods_bloodgastype_adapter = ArrayAdapter.createFromResource(this,
@@ -51,9 +54,9 @@ public class Bloods extends Activity {
         bloods_bloodgastype_spinner.setAdapter(bloods_bloodgastype_adapter);
 
         textView_TimeCodeRedInitiated_Date = (TextView) findViewById(R.id.textView_TimeCodeRedInitiated_Date);
-        button_TimeCodeRedInitiated_Date = (Button) findViewById(R.id.button_TimeCodeRedInitiated_Date);
+        button_TimeCodeRedInitiated_Date = (ImageButton) findViewById(R.id.button_TimeCodeRedInitiated_Date);
         textView_TimeCodeRedInitiated_Time = (TextView) findViewById(R.id.textView_TimeCodeRedInitiated_Time);
-        button_TimeCodeRedInitiated_Time = (Button) findViewById(R.id.button_TimeCodeRedInitiated_Time);
+        button_TimeCodeRedInitiated_Time = (ImageButton) findViewById(R.id.button_TimeCodeRedInitiated_Time);
 
         button_TimeCodeRedInitiated_Date.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -69,9 +72,9 @@ public class Bloods extends Activity {
         });
 
         textView_TimeBloodsTaken_Date = (TextView) findViewById(R.id.textView_TimeBloodsTaken_Date);
-        button_TimeBloodsTaken_Date = (Button) findViewById(R.id.button_TimeBloodsTaken_Date);
+        button_TimeBloodsTaken_Date = (ImageButton) findViewById(R.id.button_TimeBloodsTaken_Date);
         textView_TimeBloodsTaken_Time = (TextView) findViewById(R.id.textView_TimeBloodsTaken_Time);
-        button_TimeBloodsTaken_Time = (Button) findViewById(R.id.button_TimeBloodsTaken_Time);
+        button_TimeBloodsTaken_Time = (ImageButton) findViewById(R.id.button_TimeBloodsTaken_Time);
 
         button_TimeBloodsTaken_Date.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

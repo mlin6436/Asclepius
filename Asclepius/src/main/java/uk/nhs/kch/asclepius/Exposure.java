@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
@@ -14,6 +15,7 @@ public class Exposure extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exposure);
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
         Spinner exposure_site_spinner = (Spinner) findViewById(R.id.exposure_site_spinner);
         ArrayAdapter<CharSequence> exposure_site_adapter = ArrayAdapter.createFromResource(this,
